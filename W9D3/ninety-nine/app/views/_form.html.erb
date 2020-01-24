@@ -1,0 +1,41 @@
+
+<% action_url = cat.persisted? ? cat_url(cat.id) : cats_url %> 
+<form action="<%= action_url %>" method="post">
+<% if action == :edit %>
+  <input type="hidden" name="_method" value="patch" >
+<% end %>
+
+    <label for="cat_name">Name</label>
+    <input type="text" name="cat[name]" id="cat_name"> 
+<br>
+
+    <label for="cat_color">Color</label>
+    <select name="cat[color]" id="cat_color">
+        <% Cat::COLORS.each do |color|  %>
+        <option disabled selected>-- Select Color --</option>
+        <option value="<%= color ? "selected" : "" %>"></option>   
+        <% end %>
+    </select>
+<br>
+
+<label for="cat_sex">Sex</label>
+    <input type="radio" id="cat_sex" name="cat[sex]" 
+      value="<%= cat.sex == M ? "checked" : "" %>"> Male
+    <br>
+    <input type="radio" id="cat_sex" name="cat[sex]" 
+      value="<%= cat.sex == F ? "checked" : "" %>"> Female 
+<br>
+
+<label for="cat_birth_date">Birth Date</label>
+    <input type="date" id="cat_birth_date" 
+      value="<%= cat.birth_date ? "selected" : "" %>"> 
+<br>
+
+<label for="cat_description">Description</label>
+    <textarea name="cat[description]" id="cat_description">
+        <%= cat.description %>
+    </textarea> 
+
+
+<input type="submit" value="Update Cat">
+</form>
