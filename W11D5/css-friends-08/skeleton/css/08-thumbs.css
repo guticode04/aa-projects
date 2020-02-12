@@ -1,0 +1,19 @@
+/* PHASE 8: Thumbs */
+.cat-thumbs {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.cat-thumbs  img {
+  width: 53px;
+  height: 53px;
+  border: 1px solid black;
+  border-radius: 2px;
+
+}
+
+.cat-thumbs li {
+  margin: 5px;
+  
+}

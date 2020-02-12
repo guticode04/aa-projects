@@ -1,0 +1,13 @@
+/* PHASE 7: Online */
+
+.online {
+  background-color:rgba(120, 174, 76, 0.52);
+  border: 1px solid black;
+  z-index: 1;
+  display: block;
+  position: absolute;
+  text-transform: uppercase;
+  width: 100%;
+  transform: translate(-20px ,60px) rotate(-45deg);
+  text-align: center;
+}
