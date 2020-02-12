@@ -1,0 +1,16 @@
+/* PHASE 9: Forms */
+
+.post-form {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: gray;
+  height: 400px;
+  width: 600px;
+}
+
+.content-main {
+  
+}
+
+
+

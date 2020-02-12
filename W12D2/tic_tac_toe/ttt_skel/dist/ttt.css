@@ -1,0 +1,36 @@
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px solid black;
+  width: 300px;
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: gray;
+  border: 5px solid black;
+  width: 90px;
+  height: 90px;
+}
+
+li:hover {
+  background-color: yellow;
+}
+
+.mousedown {
+  background-color: white;
+}
+
+.mousedown:hover {
+  background-color: white;
+}
+
+.x, .o {
+  font-size: 40px;
+  display: block;
+}
+
+/* .mouseover{
+  background-color: yellow;
+} */
